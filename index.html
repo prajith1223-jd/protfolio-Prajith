@@ -737,7 +737,8 @@
           </a>
         </div>
       </div>
-      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" netlify>
+      <form name="contact" method="POST" data-netlify="true" action="/" class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" netlify>
+        <input type="hidden" name="form-name" value="contact">
         <div class="form-row">
           <div class="form-group">
             <label>Name</label>
